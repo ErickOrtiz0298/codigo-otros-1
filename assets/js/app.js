@@ -1,7 +1,7 @@
 const baseEndpoint = 'https://api.github.com';
 const usersEndpoint = `${baseEndpoint}/users`;
-const $name = document.querySelector("name"); //cambio de n a name
-const $blog = document.querySelector("blog");//cambio ed b a blog
+const $name = document.querySelector(".name"); //cambio de n a name
+const $blog = document.querySelector(".blog");//cambio de b a blog
 const $location = document.querySelector('.location');//cambio de l a location
 
 
@@ -27,7 +27,7 @@ async function displayUser(username) {
 function handleError(error) {
   console.log('OH NO!');
   console.log(error);
-  $name.textContent = `Algo salió mal: ${error}`;
+  $name.textContent = `Algo salió mal: ${error}`
 }
 
 displayUser('stolinski').catch(handleError);
